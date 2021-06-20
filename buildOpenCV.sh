@@ -13,7 +13,7 @@ INSTALL_DIR=/usr/local
 # Value should be YES or NO
 DOWNLOAD_OPENCV_EXTRAS=NO
 # Source code directory
-OPENCV_SOURCE_DIR=$HOME
+OPENCV_SOURCE_DIR=$HOME/git
 WHEREAMI=$PWD
 # NUM_JOBS is the number of jobs to run simultaneously when using make
 # This will default to the number of CPU cores (on the Nano, that's 4)
@@ -163,7 +163,6 @@ time cmake -D CMAKE_BUILD_TYPE=RELEASE \
       -D WITH_GSTREAMER_0_10=OFF \
       -D WITH_QT=ON \
       -D WITH_OPENGL=ON \
-      -D BUILD_opencv_python2=ON \
       -D BUILD_opencv_python3=ON \
       -D BUILD_TESTS=OFF \
       -D BUILD_PERF_TESTS=OFF \
